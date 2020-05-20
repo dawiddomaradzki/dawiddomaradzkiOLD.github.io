@@ -1,1 +1,0 @@
-# dawiddomaradzki.github.io
