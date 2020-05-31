@@ -1,40 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="person">
+    <section class="person__container">
+      <img class="person__photo" src="assets/img/profile.jpg" sizes="120x120" alt="person photo">
+      <h1 class="person__introducing">Hi! My name is Dawid and I'm an aspiring Frontend developer 🔥.</h1>
+      <p class="person__about">I graduated Mechanical Engineering but i decided to change my life path and start to
+        creating web sites. You
+        might be interested in checking the list of <a class="person__about--forwarding" href="#" target="blank">my
+          skills</a> . Don’t forget to have a glimpse at my <a class="person__about--forwarding" href="#"
+          target="blank">projects</a>. Currently
+        I’m looking for a new challenges so if you have one - <a class="person__about--forwarding" href="#"
+          target="blank">contact me</a>.</p>
+      <a class="person__mail" href="#" target="blank">dawdomaradzki@gmail.com</a>
+    </section>
+  </header>
+
+
+
+  <section class="skills">
+    <h2 class="skills__header">My Skills</h2>
+    <div class="container">
+
+      <section class="type">
+        <h3 class="type__header">
+          <div class="type__line type__line--green"></div>Working knowledge
+        </h3>
+        <section class="type__container">
+          <div>
+            <li class="type__container--item type__container--green"> Semantic HTML5</li>
+            <li class="type__container--item type__container--green"> Flexbox</li>
+            <li class="type__container--item type__container--green"> Markdown</li>
+            <li class="type__container--item type__container--green"> JS:Local Storage</li>
+            <li class="type__container--item type__container--green"> Figma</li>
+          </div>
+          <div>
+            <li class="type__container--item type__container--green"> CSS Grid</li>
+            <li class="type__container--item type__container--green"> Forms</li>
+            <li class="type__container--item type__container--green"> JS:DOM Manipulations</li>
+            <li class="type__container--item type__container--green"> SASS</li>
+          </div>
+        </section>
+      </section>
+
+      <section class="type">
+        <h3 class="type__header">
+          <div class="type__line type__line--purple"></div>Know Something About
+        </h3>
+        <section class="type__container">
+          <div>
+            <li class="type__container--item type__container--purple"> JavaScript ES6 + features</li>
+            <li class="type__container--item type__container--purple"> CSS animations</li>
+            <li class="type__container--item type__container--purple"> Working with API</li>
+            <li class="type__container--item type__container--purple"> NPM Scripts</li>
+          </div>
+          <div>
+            <li class="type__container--item type__container--purple"> Progressive web apps</li>
+            <li class="type__container--item type__container--purple"> Git</li>
+            <li class="type__container--item type__container--purple"> Accessibillity</li>
+          </div>
+        </section>
+      </section>
+
+      <section class="type">
+        <h3 class="type__header">
+          <div class="type__line  type__line--blue"></div>Want to learn
+        </h3>
+        <section class="type__container">
+          <div>
+            <li class="type__container--item type__container--blue"> React JS</li>
+            <li class="type__container--item type__container--blue"> Node.js</li>
+            <li class="type__container--item type__container--blue"> Electron</li>
+            <li class="type__container--item type__container--blue"> Serwer side rendering</li>
+          </div>
+          <div>
+            <li class="type__container--item type__container--blue"> Typescript</li>
+            <li class="type__container--item type__container--blue"> Gatsby</li>
+            <li class="type__container--item type__container--blue"> Websockets</li>
+          </div>
+        </section>
+      </section>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="projects__wrapper">
+      <h2 class="projects__header">Recent Projects</h2>
+      <p class="projects__about">I started my frontend developer path in 2003. Since then, I’ve built some projects.
+        Here’s the list of the
+        things I’ve done so far.</p>
+    </div>
+    <div class="repositories">
+      <ul class="repositories__list repositories__list--js">
+      </ul>
+    </div>
+  </section>
+
+  <footer class="contact">
+    <section class="contact__container">
+      <div class="contact__line"></div>
+      <h3 class="contact__header">Contact me</h3>
+      <p class="contact__about">I'm open for new oportunities. If you have one for me we should talk!</p>
+    </section>
+    <div class="icons">
+      <a href="https://facebook.com/" target="blank"><span class="icons__fb" role="img" aria-label="facebook"></span></a>
+      <a href="https://github.com/" target="blank"><span class="icons__git" role="img" aria-label="github"></span></a>
+      <a href="https://instagram.com/" target="blank"><span class="icons__instagram" role="img" aria-label="instagram"></span></a>
+      
+    </div>
+    <a class="contact__mail" href="#" target="blank">dawdomaradzki@gmail.com</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>

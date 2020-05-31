@@ -1,16 +1,252 @@
 @import "_normalize";
 @import "_variables";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: #171f3f;
+  padding: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.person {
+  background: $white;
+  padding: 128px 128px 200px 128px;
+
+  &__introducing {
+    font-size: 40px;
+    line-height: 56px;
+    margin: 0;
+  }
+
+  &__photo {
+    margin-bottom: 32px;
+  }
+
+  &__container {
+    width: 546px;
+  }
+
+  &__about {
+    color: $darkGrey;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 20px 0 60px;
+
+    &--forwarding {
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+  &__mail {
+    text-decoration: none;
+    color: $blue;
+    font-weight: 600;
+    border-bottom: 2px solid $blue;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.skills {
+  background: $white;
+  padding: 0 125px 40px 128px;
+
+  &__header {
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: 2px solid $grey;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.type {
+  display: grid;
+  grid-template-columns: 379px auto;
+  grid-template-rows: auto;
+  padding-bottom: 128px;
+  column-gap: 225px;
+
+  &__header {
+    margin: 0;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  &__line {
+    border-top: 4px solid $grey;
+    width: 80px;
+    margin-bottom: 24px;
+
+    &--blue {
+     border-color: #2251CC; 
+    }
+
+    &--green {
+     border-color: #06C847; 
+    }
+
+     &--purple {
+     border-color: #653CAD; 
+    }
+  }
+  &__container {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(278px, 1fr));
+    grid-column-gap: 24px;
+
+    &--item {
+      display: flex;
+      font-weight: 300;
+      list-style: none;
+      font-size: 18px;
+      line-height: 40px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.type__container--item:before {
+  content: "";
+  display: flex;
+  align-self: center;
+  height: 18px;
+  width: 18px;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+}
+
+.type__container--blue:before { 
+background-image: url("../assets/img/okblue.svg");
+}
+
+.type__container--green:before { 
+background-image: url("../assets/img/okgreen.svg");
+}
+
+.type__container--purple:before { 
+background-image: url("../assets/img/okpurple.svg");
+}
+
+.container {
+  margin-top: 128px;
+}
+
+.projects {
+  background: $grey;
+  padding: 128px;
+
+  &__wrapper {
+    width: 580px;
+  }
+
+  &__header {
+    margin: 0;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  &__about {
+    color: $darkGrey;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 16px 0 64px;
+  }
+}
+
+.repositories {
+  &__list {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@supports (display: grid) {
+  .repositories__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact {
+  padding: 128px;
+  color: $white;
+
+  &__container {
+    width: 580px;
+  }
+
+  &__line {
+    border-top: 4px solid $blue;
+    width: 80px;
+    margin-bottom: 24px;
+  }
+
+  &__header {
+    margin: 0;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  &__about {
+    margin: 16px 0 24px;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  &__mail {
+    text-decoration: none;
+    color: $blue;
+    font-weight: 600;
+    border-bottom: 2px solid $blue;
+    padding-bottom: 8px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.icons {
+  margin: 0 0 48px;
+
+  &__fb,
+  &__instagram,
+  &__git {
+    content: "";
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__fb {
+    background-image: url("../assets/img/fb.svg");
+  }
+
+  &__instagram {
+    background-image: url("../assets/img/instagram.svg");
+  }
+
+  &__git {
+    background-image: url("../assets/img/github.svg");
+  }
 }
