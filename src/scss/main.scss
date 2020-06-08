@@ -50,6 +50,7 @@ body {
       color: $blue;
     }
   }
+
   &__mail {
     text-decoration: none;
     color: $blue;
@@ -75,40 +76,20 @@ body {
 }
 
 .type {
-  display: grid;
-  grid-template-columns: 379px auto;
-  grid-template-rows: auto;
+  display: flex;
   padding-bottom: 128px;
-  column-gap: 225px;
+  justify-content: space-between;
 
   &__header {
     margin: 0;
     font-size: 32px;
     line-height: 44px;
+    width: 379px;
   }
 
-  &__line {
-    border-top: 4px solid $grey;
-    width: 80px;
-    margin-bottom: 24px;
-
-    &--blue {
-     border-color: #2251CC; 
-    }
-
-    &--green {
-     border-color: #06C847; 
-    }
-
-     &--purple {
-     border-color: #653CAD; 
-    }
-  }
   &__container {
     margin-top: 26px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(278px, 1fr));
-    grid-column-gap: 24px;
+    display: flex;
 
     &--item {
       display: flex;
@@ -119,6 +100,33 @@ body {
       white-space: nowrap;
     }
   }
+
+  &__containerA {
+    width: 278px;
+    margin-right: 24px;
+  }
+
+  &__containerB {
+    width: 278px;
+  }
+
+  &__line {
+    border-top: 4px solid $grey;
+    width: 80px;
+    margin-bottom: 24px;
+
+    &--blue {
+      border-color: #2251cc;
+    }
+
+    &--green {
+      border-color: #06c847;
+    }
+
+    &--purple {
+      border-color: #653cad;
+    }
+  }
 }
 
 .type__container--item:before {
@@ -127,22 +135,22 @@ body {
   align-self: center;
   height: 18px;
   width: 18px;
-  
+
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 12px;
 }
 
-.type__container--blue:before { 
-background-image: url("../assets/img/okblue.svg");
+.type__container--blue:before {
+  background-image: url("../assets/img/okblue.svg");
 }
 
-.type__container--green:before { 
-background-image: url("../assets/img/okgreen.svg");
+.type__container--green:before {
+  background-image: url("../assets/img/okgreen.svg");
 }
 
-.type__container--purple:before { 
-background-image: url("../assets/img/okpurple.svg");
+.type__container--purple:before {
+  background-image: url("../assets/img/okpurple.svg");
 }
 
 .container {
@@ -248,5 +256,60 @@ background-image: url("../assets/img/okpurple.svg");
 
   &__git {
     background-image: url("../assets/img/github.svg");
+  }
+}
+
+@media (max-width: $desktop) and (min-width: $desktop1) {
+  .type__container {
+    display: block;
+  }
+}
+
+@media (max-width: $phone) {
+  body {
+    padding: 0;
+    flex-flow: column nowrap;
+  }
+  .person {
+    padding: 64px 16px 120px 16px;
+
+    &__container {
+      width: 343px;
+    }
+  }
+
+  .skills {
+    padding: 0px 16px 80px 16px;
+
+    &__header {
+      text-align: center;
+    }
+  }
+
+  .type {
+    flex-direction: column;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .projects {
+    padding: 60px 16px;
+
+    &__wrapper {
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+  }
+
+  .contact {
+    padding: 120px 16px;
+
+    &__container {
+      width: 343px;
+    }
   }
 }
