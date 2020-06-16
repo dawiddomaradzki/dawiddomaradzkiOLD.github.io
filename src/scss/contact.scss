@@ -1,0 +1,64 @@
+.contact {
+    padding: 128px;
+    color: $white;
+    background-color: $bigStone;
+
+    &__container {
+        width: 580px;
+    }
+
+    &__line {
+        border-top: 4px solid $blue;
+        width: 80px;
+        margin-bottom: 24px;
+    }
+
+    &__header {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 2.75rem;
+    }
+
+    &__about {
+        margin: 16px 0 24px;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    &__mail {
+        text-decoration: none;
+        color: $blue;
+        font-weight: 600;
+        border-bottom: 2px solid $blue;
+        padding-bottom: 8px;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+.icons {
+    margin: 0 0 48px;
+
+    &__fb,
+    &__instagram,
+    &__git {
+        content: "";
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        margin-right: 24px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__fb {
+        background-image: url("../assets/img/fb.svg");
+    }
+
+    &__instagram {
+        background-image: url("../assets/img/instagram.svg");
+    }
+
+    &__git {
+        background-image: url("../assets/img/github.svg");
+    }
+}

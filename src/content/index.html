@@ -17,7 +17,6 @@
   <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
   <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
 
-  <link rel="manifest" href="manifest.json" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
@@ -29,89 +28,67 @@
 <body>
   <header class="person">
     <section class="person__container">
-      <img class="person__photo" src="assets/img/profile.jpg" sizes="120x120" alt="person photo">
+      <img class="person__photo" src="assets/img/profile.jpg" sizes="120x120" alt="person photo.">
       <h1 class="person__introducing">Hi! My name is Dawid and I'm an aspiring Frontend developer 🔥.</h1>
       <p class="person__about">I graduated Mechanical Engineering but i decided to change my life path and start to
         creating web sites. You
-        might be interested in checking the list of <a class="person__about--forwarding" href="#" target="blank">my
-          skills</a> . Don’t forget to have a glimpse at my <a class="person__about--forwarding" href="#"
-          target="blank">projects</a>. Currently
-        I’m looking for a new challenges so if you have one - <a class="person__about--forwarding" href="#"
-          target="blank">contact me</a>.</p>
-      <a class="person__mail" href="#" target="blank">dawdomaradzki@gmail.com</a>
+        might be interested in checking the list of <a class="person__about--forwarding" href="#skills">my
+          skills</a> . Don’t forget to have a glimpse at my <a class="person__about--forwarding"
+          href="#projects">projects</a>. Currently
+        I’m looking for a new challenges so if you have one - <a class="person__about--forwarding"
+          href="#contact">contact me</a>.</p>
+      <a class="person__mail" href="mailto:dawdomaradzki@gmail.com" target="blank">dawdomaradzki@gmail.com</a>
     </section>
   </header>
 
-
-
-  <section class="skills">
+  <section id="skills" class="skills">
     <h2 class="skills__header">My Skills</h2>
     <div class="container">
 
       <section class="type">
-        
-        <h3 class="type__header">
-          <div class="type__line type__line--green"></div>Working knowledge
-        </h3>
-    
-          <section class="type__container">
-            <div class="type__containerA">
-              <li class="type__container--item type__container--green"> Semantic HTML5</li>
-              <li class="type__container--item type__container--green"> Flexbox</li>
-              <li class="type__container--item type__container--green"> Markdown</li>
-              <li class="type__container--item type__container--green"> JS:Local Storage</li>
-              <li class="type__container--item type__container--green"> Figma</li>
-            </div>
-            <div class="type__containerB">
-              <li class="type__container--item type__container--green"> CSS Grid</li>
-              <li class="type__container--item type__container--green"> Forms</li>
-              <li class="type__container--item type__container--green"> JS:DOM Manipulations</li>
-              <li class="type__container--item type__container--green"> SASS</li>
-            </div>
-          </section>
+        <h3 class="type__title">Working knowledge</h3>
+        <ul class="type__list">
+          <li class="type__item"> Semantic HTML5</li>
+          <li class="type__item"> Flexbox</li>
+          <li class="type__item"> Markdown</li>
+          <li class="type__item"> JS:Local Storage</li>
+          <li class="type__item"> Figma</li>
+          <li class="type__item"> CSS Grid</li>
+          <li class="type__item"> Forms</li>
+          <li class="type__item"> JS:DOM Manipulations</li>
+          <li class="type__item"> SASS</li>
+        </ul>
       </section>
 
-      <section class="type">
-        <h3 class="type__header">
-          <div class="type__line type__line--purple"></div>Know Something About
-        </h3>
-        <section class="type__container">
-          <div class="type__containerA">
-            <li class="type__container--item type__container--purple"> JavaScript ES6 + features</li>
-            <li class="type__container--item type__container--purple"> CSS animations</li>
-            <li class="type__container--item type__container--purple"> Working with API</li>
-            <li class="type__container--item type__container--purple"> NPM Scripts</li>
-          </div>
-          <div class="type__containerB">
-            <li class="type__container--item type__container--purple"> Progressive web apps</li>
-            <li class="type__container--item type__container--purple"> Git</li>
-            <li class="type__container--item type__container--purple"> Accessibillity</li>
-          </div>
-        </section>
+      <section class="type type__purple">
+        <h3 class="type__title">Know Something About</h3>
+        <ul class="type__list">
+          <li class="type__item"> JavaScript ES6 + features</li>
+          <li class="type__item"> CSS animations</li>
+          <li class="type__item"> Working with API</li>
+          <li class="type__item"> NPM Scripts</li>
+          <li class="type__item"> Progressive web apps</li>
+          <li class="type__item"> Git</li>
+          <li class="type__item"> Accessibillity</li>
+        </ul>
       </section>
 
-      <section class="type">
-        <h3 class="type__header">
-          <div class="type__line  type__line--blue"></div>Want to learn
-        </h3>
-        <section class="type__container">
-          <div class="type__containerA">
-            <li class="type__container--item type__container--blue"> React JS</li>
-            <li class="type__container--item type__container--blue"> Node.js</li>
-            <li class="type__container--item type__container--blue"> Electron</li>
-            <li class="type__container--item type__container--blue"> Serwer side rendering</li>
-          </div>
-          <div class="type__containerB">
-            <li class="type__container--item type__container--blue"> Typescript</li>
-            <li class="type__container--item type__container--blue"> Gatsby</li>
-            <li class="type__container--item type__container--blue"> Websockets</li>
-          </div>
-        </section>
+      <section class="type type__blue">
+        <h3 class="type__title">Want to learn</h3>
+        <ul class="type__list">
+          <li class="type__item"> React JS</li>
+          <li class="type__item"> Node.js</li>
+          <li class="type__item"> Electron</li>
+          <li class="type__item"> Serwer side rendering</li>
+          <li class="type__item"> Typescript</li>
+          <li class="type__item"> Gatsby</li>
+          <li class="type__item"> Websockets</li>
+        </ul>
       </section>
     </div>
   </section>
 
-  <section class="projects">
+  <section id="projects" class="projects">
     <div class="projects__wrapper">
       <h2 class="projects__header">Recent Projects</h2>
       <p class="projects__about">I started my frontend developer path in 2003. Since then, I’ve built some projects.
@@ -124,7 +101,7 @@
     </div>
   </section>
 
-  <footer class="contact">
+  <footer id="contact" class="contact">
     <section class="contact__container">
       <div class="contact__line"></div>
       <h3 class="contact__header">Contact me</h3>

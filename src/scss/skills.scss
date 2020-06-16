@@ -1,0 +1,77 @@
+.skills {
+    padding-bottom: 168px;
+    margin: 0 auto;
+    max-width: 1184px;
+
+    &__header {
+        margin: 0;
+        padding: 1rem 0;
+        border-bottom: 2px solid $grey;
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+}
+
+.type {
+    display: grid;
+    padding-top: 128px;
+    grid-template-columns: 1fr 1fr;
+
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        width: 379px;
+
+        &::before {
+            content: "";
+            width: 80px;
+            height: 4px;
+            display: block;
+            background: #06c847;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            .type__purple & {
+                background: #653cad;
+            }
+            .type__blue & {
+                background: #2251cc;
+            }
+        }
+    }
+
+    &__list {
+        margin-top: 26px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+    }
+
+    &__item {
+        font-weight: 300;
+        list-style: none;
+        font-size: 1.125rem;
+        line-height: 2.5rem;
+        position: relative;
+        padding-left: 22px;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-size: contain;
+            background-image: url("../assets/img/okgreen.svg");
+            .type__purple & {
+                background-image: url("../assets/img/okpurple.svg");
+            }
+            .type__blue & {
+                background-image: url("../assets/img/okblue.svg");
+            }
+        }
+    }
+}

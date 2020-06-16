@@ -1,0 +1,37 @@
+.projects {
+    background: $grey;
+    padding: 128px;
+
+    &__wrapper {
+        width: 580px;
+    }
+
+    &__header {
+        margin: 0;
+        font-size: 2.25rem;
+        line-height: 3rem;
+    }
+
+    &__about {
+        color: $darkGrey;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        margin: 16px 0 64px;
+    }
+}
+
+.repositories {
+    &__list {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@supports (display: grid) {
+    .repositories__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

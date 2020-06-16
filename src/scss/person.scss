@@ -1,0 +1,39 @@
+.person {
+    background: $white;
+    padding: 112px 0px 184px;
+    margin: 0 auto;
+    max-width: 1184px;
+
+    &__introducing {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin: 0;
+        max-width: 780px;
+    }
+
+    &__photo {
+        margin-bottom: 2rem;
+    }
+
+    &__about {
+        color: $darkGrey;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin: 1.25rem 0 3.75rem;
+        max-width: 780px;
+
+        &--forwarding {
+            font-weight: 600;
+            color: $blue;
+        }
+    }
+
+    &__mail {
+        text-decoration: none;
+        color: $blue;
+        font-weight: 600;
+        border-bottom: 2px solid $blue;
+        padding-bottom: 8px;
+        font-size: 1.25rem;
+    }
+}
