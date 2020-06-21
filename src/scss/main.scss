@@ -29,6 +29,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
 // @media (max-width: $desktop) and (min-width: $desktop1) {
 //   .type__container {
 //     display: block;
