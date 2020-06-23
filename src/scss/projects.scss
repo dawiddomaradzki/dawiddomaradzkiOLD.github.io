@@ -2,7 +2,7 @@
     background: $lightGrey;
     padding: 8rem 0;
     &__header {
-        margin: 0 auto;
+        margin: 0 auto 1rem;
         font-size: 2.25rem;
         line-height: 3rem;
         max-width: 1184px;
@@ -13,7 +13,7 @@
         color: $darkGrey;
         font-size: 1.25rem;
         line-height: 2.25rem;
-        margin: 1rem 0 4rem;
+        margin: 0 0 4rem;
         max-width: 580px;
     }
 }

@@ -1,28 +1,32 @@
 .contact {
-    padding: 128px;
     color: $white;
     background-color: $bigStone;
-
-    &__container {
-        width: 580px;
-    }
-
-    &__line {
-        border-top: 4px solid $blue;
-        width: 80px;
-        margin-bottom: 24px;
-    }
+    padding-bottom: calc(8rem - 16px);
 
     &__header {
-        margin: 0;
+        font-weight: 600;
+        font-style: normal;
+        margin: 0 auto 1rem;
         font-size: 2rem;
         line-height: 2.75rem;
+        padding: 8rem 0 0;
+        max-width: 1184px;
+        &::before {
+            content: "";
+            width: 80px;
+            height: 4px;
+            display: block;
+            background: #0593fb;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__about {
-        margin: 16px 0 24px;
+        margin: 0 0 1.5rem;
         font-size: 1.25rem;
         line-height: 2.25rem;
+        max-width: 580px;
     }
     &__mail {
         text-decoration: none;
@@ -32,33 +36,24 @@
         padding-bottom: 8px;
         font-size: 1.25rem;
         line-height: 2rem;
+        display: inline-block;
+        margin: 3rem 0 0;
     }
 }
 
-.icons {
-    margin: 0 0 48px;
+.social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
 
-    &__fb,
-    &__instagram,
-    &__git {
-        content: "";
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        margin-right: 24px;
-        background-size: contain;
-        background-repeat: no-repeat;
+    &__item {
+        & + & {
+            margin-left: 1.5rem;
+        }
     }
 
-    &__fb {
-        background-image: url("../assets/img/fb.svg");
-    }
-
-    &__instagram {
-        background-image: url("../assets/img/instagram.svg");
-    }
-
-    &__git {
-        background-image: url("../assets/img/github.svg");
+    &__link {
+        text-decoration: none;
     }
 }
