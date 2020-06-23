@@ -10,6 +10,11 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-size: 16px;
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
+  }
 }
 
 *,
@@ -22,62 +27,14 @@ body {
   background: $white;
   color: $bigStone;
   border: 16px solid $bigStone;
-  // display: flex;
-  // flex-flow: column wrap;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: 1184px;
+  max-width: 1216px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
-// @media (max-width: $desktop) and (min-width: $desktop1) {
-//   .type__container {
-//     display: block;
-//   }
-// }
-
-// @media (max-width: $phone) {
-//   body {
-//     padding: 0;
-//     flex-flow: column nowrap;
-//   }
-
-//   .skills {
-//     padding: 0px 16px 80px 16px;
-
-//     &__header {
-//       text-align: center;
-//     }
-//   }
-
-//   .type {
-//     flex-direction: column;
-
-//     &__container {
-//       flex-direction: column;
-//     }
-//   }
-
-//   .projects {
-//     padding: 60px 16px;
-
-//     &__wrapper {
-//       margin: 0 auto;
-//       display: flex;
-//       flex-flow: column nowrap;
-//       text-align: center;
-//     }
-//   }
-
-//   .contact {
-//     padding: 120px 16px;
-
-//     &__container {
-//       width: 343px;
-//     }
-//   }
-// }
