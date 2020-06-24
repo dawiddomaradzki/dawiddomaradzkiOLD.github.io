@@ -9,6 +9,9 @@
         border-bottom: 2px solid $grey;
         font-size: 2.25rem;
         line-height: 3rem;
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
     }
 }
 
@@ -16,6 +19,10 @@
     display: grid;
     padding-top: 128px;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0 0;
+    }
 
     &__title {
         margin: 0;
@@ -46,6 +53,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1.5rem;
+        @media (max-width: $mobile) {
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
     }
 
     &__item {
@@ -54,16 +64,16 @@
         font-size: 1.125rem;
         line-height: 2.5rem;
         position: relative;
-        padding-left: 22px;
+        padding-left: 1.375rem;
 
         &::before {
             content: "";
             display: block;
             position: absolute;
-            top: 12px;
+            top: 0.6875rem;
             left: 0;
-            height: 18px;
-            width: 18px;
+            height: 1.125rem;
+            width: 1.125rem;
             background-size: contain;
             background-image: url("../assets/img/okgreen.svg");
             .type__purple & {

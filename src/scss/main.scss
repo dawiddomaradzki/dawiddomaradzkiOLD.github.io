@@ -30,6 +30,9 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @media (max-width: $mobile) {
+    border: none;
+  }
 }
 
 .container {
@@ -37,4 +40,3 @@ body {
   padding: 0 16px;
   margin: 0 auto;
 }
-

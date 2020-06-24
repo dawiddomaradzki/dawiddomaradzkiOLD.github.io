@@ -26,152 +26,154 @@
 </head>
 
 <body>
-  <header class="person">
-    <section class="person__container">
-      <img class="person__photo" src="assets/img/profile.jpg" sizes="120x120" alt="person photo.">
-      <h1 class="person__introducing">Hi! My name is Dawid and I'm an aspiring Frontend developer 🔥.</h1>
-      <p class="person__about">I graduated Mechanical Engineering but i decided to change my life path and start to
-        creating web sites. You
-        might be interested in checking the list of <a class="person__about--forwarding" href="#skills">my
-          skills</a> . Don’t forget to have a glimpse at my <a class="person__about--forwarding"
-          href="#projects">projects</a>. Currently
-        I’m looking for a new challenges so if you have one - <a class="person__about--forwarding"
-          href="#contact">contact me</a>.</p>
-      <a class="person__mail" href="mailto:dawdomaradzki@gmail.com" target="blank">dawdomaradzki@gmail.com</a>
+  <main>
+    <header class="person">
+      <section class="person__container">
+        <img class="person__photo" src="assets/img/profile.jpg" sizes="120x120" alt="person photo.">
+        <h1 class="person__introducing">Hi! My name is Dawid and I'm an aspiring Frontend developer 🔥.</h1>
+        <p class="person__about">I graduated Mechanical Engineering but i decided to change my life path and start to
+          creating web sites. You
+          might be interested in checking the list of <a class="person__about--forwarding" href="#skills">my
+            skills</a> . Don’t forget to have a glimpse at my <a class="person__about--forwarding"
+            href="#projects">projects</a>. Currently
+          I’m looking for a new challenges so if you have one - <a class="person__about--forwarding"
+            href="#contact">contact me</a>.</p>
+        <a class="person__mail" href="mailto:dawdomaradzki@gmail.com" target="blank">dawdomaradzki@gmail.com</a>
+      </section>
+    </header>
+
+    <section id="skills" class="skills">
+      <h2 class="skills__header">My Skills</h2>
+      <div class="container">
+
+        <section class="type">
+          <h3 class="type__title">Working knowledge</h3>
+          <ul class="type__list">
+            <li class="type__item"> Semantic HTML5</li>
+            <li class="type__item"> Flexbox</li>
+            <li class="type__item"> Markdown</li>
+            <li class="type__item"> JS:Local Storage</li>
+            <li class="type__item"> Figma</li>
+            <li class="type__item"> CSS Grid</li>
+            <li class="type__item"> Forms</li>
+            <li class="type__item"> JS:DOM Manipulations</li>
+            <li class="type__item"> SASS</li>
+          </ul>
+        </section>
+
+        <section class="type type__purple">
+          <h3 class="type__title">Know Something About</h3>
+          <ul class="type__list">
+            <li class="type__item"> JavaScript ES6 + features</li>
+            <li class="type__item"> CSS animations</li>
+            <li class="type__item"> Working with API</li>
+            <li class="type__item"> NPM Scripts</li>
+            <li class="type__item"> Progressive web apps</li>
+            <li class="type__item"> Git</li>
+            <li class="type__item"> Accessibillity</li>
+          </ul>
+        </section>
+
+        <section class="type type__blue">
+          <h3 class="type__title">Want to learn</h3>
+          <ul class="type__list">
+            <li class="type__item"> React JS</li>
+            <li class="type__item"> Node.js</li>
+            <li class="type__item"> Electron</li>
+            <li class="type__item"> Serwer side rendering</li>
+            <li class="type__item"> Typescript</li>
+            <li class="type__item"> Gatsby</li>
+            <li class="type__item"> Websockets</li>
+          </ul>
+        </section>
+      </div>
     </section>
-  </header>
 
-  <section id="skills" class="skills">
-    <h2 class="skills__header">My Skills</h2>
-    <div class="container">
+    <section id="projects" class="projects">
 
-      <section class="type">
-        <h3 class="type__title">Working knowledge</h3>
-        <ul class="type__list">
-          <li class="type__item"> Semantic HTML5</li>
-          <li class="type__item"> Flexbox</li>
-          <li class="type__item"> Markdown</li>
-          <li class="type__item"> JS:Local Storage</li>
-          <li class="type__item"> Figma</li>
-          <li class="type__item"> CSS Grid</li>
-          <li class="type__item"> Forms</li>
-          <li class="type__item"> JS:DOM Manipulations</li>
-          <li class="type__item"> SASS</li>
+      <h2 class="projects__header">Recent Projects</h2>
+      <div class="container">
+        <p class="projects__about">I started my frontend developer path in 2003. Since then, I’ve built some projects.
+          Here’s the list of the
+          things I’ve done so far.</p>
+
+        <ul class="projects-list">
+          <li class="project">
+            <div class="project__container">
+              <img src="assets/img/githubpurple.svg" alt="github photo">
+              <h3 class="project__title">nazwa repo</h3>
+              <p class="project__description">opis repo</p>
+            </div>
+            <div class="project__footer">
+              <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
+              <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__container">
+              <img src="assets/img/githubpurple.svg" alt="github photo">
+              <h3 class="project__title">nazwa repo</h3>
+              <p class="project__description">opis repo</p>
+            </div>
+            <div class="project__footer">
+              <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
+              <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__container">
+              <img src="assets/img/githubpurple.svg" alt="github photo">
+              <h3 class="project__title">nazwa repo</h3>
+              <p class="project__description">opis repo</p>
+            </div>
+            <div class="project__footer">
+              <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
+              <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__container">
+              <img src="assets/img/githubpurple.svg" alt="github photo">
+              <h3 class="project__title">nazwa repo</h3>
+              <p class="project__description">opis repo</p>
+            </div>
+            <div class="project__footer">
+              <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
+              <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
+            </div>
+          </li>
+
         </ul>
-      </section>
 
-      <section class="type type__purple">
-        <h3 class="type__title">Know Something About</h3>
-        <ul class="type__list">
-          <li class="type__item"> JavaScript ES6 + features</li>
-          <li class="type__item"> CSS animations</li>
-          <li class="type__item"> Working with API</li>
-          <li class="type__item"> NPM Scripts</li>
-          <li class="type__item"> Progressive web apps</li>
-          <li class="type__item"> Git</li>
-          <li class="type__item"> Accessibillity</li>
+
+      </div>
+    </section>
+
+    <footer id="contact" class="contact">
+      <h2 class="contact__header">Contact me</h2>
+      <div class="container">
+        <p class="contact__about">I'm open for new oportunities. If you have one for me we should talk!</p>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://facebook.com/" target="blank" alt="facebook">
+              <img class="social__icon" src="assets/img/fb.svg" alt="fb">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://github.com/" target="blank" alt="github">
+              <img class="social__icon" src="assets/img/github.svg" alt="git">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://instagram.com/" target="blank" alt="instagram">
+              <img class="social__icon" src="assets/img/instagram.svg" alt="instagram">
+            </a>
+          </li>
         </ul>
-      </section>
-
-      <section class="type type__blue">
-        <h3 class="type__title">Want to learn</h3>
-        <ul class="type__list">
-          <li class="type__item"> React JS</li>
-          <li class="type__item"> Node.js</li>
-          <li class="type__item"> Electron</li>
-          <li class="type__item"> Serwer side rendering</li>
-          <li class="type__item"> Typescript</li>
-          <li class="type__item"> Gatsby</li>
-          <li class="type__item"> Websockets</li>
-        </ul>
-      </section>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-
-    <h2 class="projects__header">Recent Projects</h2>
-    <div class="container">
-      <p class="projects__about">I started my frontend developer path in 2003. Since then, I’ve built some projects.
-        Here’s the list of the
-        things I’ve done so far.</p>
-
-      <ul class="projects-list">
-        <li class="project">
-          <div class="project__container">
-            <img src="assets/img/githubpurple.svg" alt="github photo">
-            <h3 class="project__title">nazwa repo</h3>
-            <p class="project__description">opis repo</p>
-          </div>
-          <div class="project__footer">
-            <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
-            <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project__container">
-            <img src="assets/img/githubpurple.svg" alt="github photo">
-            <h3 class="project__title">nazwa repo</h3>
-            <p class="project__description">opis repo</p>
-          </div>
-          <div class="project__footer">
-            <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
-            <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project__container">
-            <img src="assets/img/githubpurple.svg" alt="github photo">
-            <h3 class="project__title">nazwa repo</h3>
-            <p class="project__description">opis repo</p>
-          </div>
-          <div class="project__footer">
-            <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
-            <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
-          </div>
-        </li>
-        <li class="project">
-          <div class="project__container">
-            <img src="assets/img/githubpurple.svg" alt="github photo">
-            <h3 class="project__title">nazwa repo</h3>
-            <p class="project__description">opis repo</p>
-          </div>
-          <div class="project__footer">
-            <a class="project__link project__link--demo" href="#" title="Demo: title">Demo</a>
-            <a class="project__link project__link--source" href="#" title="Source code: title">Github</a>
-          </div>
-        </li>
-
-      </ul>
-
-
-    </div>
-  </section>
-
-  <footer id="contact" class="contact">
-    <h2 class="contact__header">Contact me</h2>
-    <div class="container">
-      <p class="contact__about">I'm open for new oportunities. If you have one for me we should talk!</p>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link" href="https://facebook.com/" target="blank" alt="facebook">
-            <img class="social__icon" src="assets/img/fb.svg" alt="fb">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://github.com/" target="blank" alt="github">
-            <img class="social__icon" src="assets/img/github.svg" alt="git">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://instagram.com/" target="blank" alt="instagram">
-            <img class="social__icon" src="assets/img/instagram.svg" alt="instagram">
-          </a>
-        </li>
-      </ul>
-      <a class="contact__mail" href="#" target="blank">dawdomaradzki@gmail.com</a>
-    </div>
-  </footer>
+        <a class="contact__mail" href="#" target="blank">dawdomaradzki@gmail.com</a>
+      </div>
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
