@@ -1,9 +1,15 @@
-# wtf-gulp-starter
+![Dawid Domaradzki Personal Website](src/assets/img/cover.png)
 
-`npm install -g gulp-cli`
+# Dawid Domaradzki Personal Website
 
-`npm install`
+This website is built as a final project of "WTF co ten frontend" course.
 
-`gulp`
+## To create website I've used
 
-To publish your page using github pages use `npm run deploy`
+-Visual Studio Code
+-Gulp
+-SASS
+-Fetch API
+-CSS Grid
+
+# built with wtf-gulp-starter
